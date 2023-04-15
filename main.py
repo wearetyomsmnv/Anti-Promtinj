@@ -54,3 +54,5 @@ result = clf.predict(query_vector)
 if result[0] == 1:
     print("Запрос содержит SQL-инъекцию")
     sys.exit(0)
+elif result[0] == 0:
+    print("ok")
